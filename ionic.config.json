@@ -1,0 +1,7 @@
+{
+  "name": "hrApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
