@@ -1,0 +1,52 @@
+  <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-label>
+            Name:
+          </ion-label>
+        </ion-col>
+        <ion-col>
+          <ion-input type="text" formControlName="name"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-label>
+            Email:
+          </ion-label>
+        </ion-col>
+        <ion-col>
+          <ion-input type="email" formControlName="email"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-label>
+            Phone:
+          </ion-label>
+        </ion-col>
+        <ion-col>
+          <ion-input type="tel" formControlName="phone"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-label>
+            Website:
+          </ion-label>
+        </ion-col>
+        <ion-col>
+          <ion-input type="url" formControlName="website"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit">Submit</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="danger" (click)="cancelEdit()">Cancel</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
